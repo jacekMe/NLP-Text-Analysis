@@ -1,0 +1,21 @@
+WPŁYW STEMMINGU (Z vs BEZ)
+
+1. Słownik (Wielkość macierzy):
+
+    - Ze Stemmingiem: Słownik jest mniejszy (mniej kolumn w macierzy). Słowa "price", "prices", "priced" są zbite w jeden termin "price".
+
+    - Bez Stemmingu: Słownik jest większy i bardziej "zaśmiecony". Mamy osobne kolumny dla każdej odmiany słowa.
+
+2. Trafność wyszukiwania (Recall vs Precision):
+
+    - Ze Stemmingiem (Większy "Recall"): System znajduje więcej dokumentów. Jeśli w zapytaniu wpiszemy "investment", znajdzie też artykuły
+    zawierające "investing" czy "invested". To jest zazwyczaj pożądane w prostych wyszukiwarkach.
+
+    - Bez Stemmingu (Większa "Precision", ale ryzyko błędu): System jest bardzo dosłowny. Jeśli wpiszemy w zapytaniu "banks", a w tekście jest tylko
+    "bank" (liczba pojedyncza), system może tego NIE znaleźć (lub dać bardzo niski wynik).
+
+3. Chmura słów:
+
+    - Ze Stemmingiem: Jest bardziej czytelna, pokazuje główne tematy (np. duże słowo "PLAY" obejmuje play, playing, played).
+
+    - Bez Stemmingu: Słowa są rozproszone. Możesz widzieć obok siebie średniej wielkości "play" i "playing".
