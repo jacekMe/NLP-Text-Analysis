@@ -1,0 +1,32 @@
+============================================================
+PROJEKT JUPYTER NOTEBOOK - INSTRUKCJA (LINUX / macOS)
+============================================================
+
+Wymagania wstępne:
+1. Python 3 (zazwyczaj preinstalowany, sprawdź: python3 --version)
+2. Narzędzie pip (menedżer pakietów Pythona)
+
+KROK 1: Przygotowanie środowiska i plików
+1. Otwórz terminal w folderze projektu.
+2. Utwórz wirtualne środowisko (zalecane):
+   python3 -m venv venv
+3. Aktywuj środowisko:
+   source venv/bin/activate
+
+KROK 2: Instalacja Jupyter Notebook i bibliotek
+1. Zaktualizuj pip:
+   pip install --upgrade pip
+2. Zainstaluj Jupyter oraz wymagane biblioteki:
+   pip install jupyter pandas nltk scikit-learn wordcloud matplotlib
+
+KROK 3: Uruchomienie projektu
+1. W terminalu (z aktywnym środowiskiem venv) wpisz:
+   jupyter notebook
+2. W oknie przeglądarki, które się otworzy, wybierz plik `.ipynb` (np. project_with_stemmer.ipynb).
+
+KROK 4: Uruchomienie kodu
+1. Po otwarciu pliku wybierz z górnego menu: Cell -> Run All.
+2. Możesz też uruchamiać każdą komórkę osobno skrótem Shift + Enter.
+
+WSKAZÓWKA:
+Jeśli nie chcesz instalować środowiska lokalnie, możesz wgrać pliki projektu bezpośrednio do Google Colab (colab.research.google.com), gdzie większość bibliotek jest już dostępna.

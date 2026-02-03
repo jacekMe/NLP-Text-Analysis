@@ -1,0 +1,40 @@
+===========================================
+INSTRUKCJA URUCHOMIENIA PROJEKTU (WINDOWS)
+===========================================
+
+Wymagania wstępne:
+Aby uruchomić plik Jupyter Notebook (.ipynb), zalecana jest instalacja pakietu Anaconda, który zawiera Pythona i wszystkie niezbędne biblioteki.
+
+KROK 1: Instalacja środowiska
+1. Proszę pobrać instalator "Anaconda Distribution" dla Windows ze strony: https://www.anaconda.com/download
+2. Proszę zainstalować program (można klikać "Next" przy domyślnych ustawieniach).
+
+KROK 2: Przygotowanie plików
+1. Proszę umieścić pliki projektu (.ipynb) w wybranym folderze.
+2. Proszę upewnić się, że w tym samym folderze znajdują się pliki z danymi:
+   - `bbc-news-data.csv` (plik źródłowy z Kaggle)
+   LUB gotowe pliki tekstowe (jeśli ich nie ma to skrypt 'preparing_docs_&_queries.ipynb je wygeneruje):
+   - `dokumenty.txt`
+   - `zapytania.txt`
+
+KROK 3: Uruchomienie Jupyter Notebook
+1. W menu Start proszę wyszukać i uruchomić "Anaconda Navigator".
+2. Proszę kliknąć przycisk "Launch" pod ikoną "Jupyter Notebook".
+3. Otworzy się przeglądarka internetowa. Nawiguj w niej do folderu, w którym zapisane są pliki `.ipynb`.
+4. Proszę kliknąć na nazwę pliku, aby go otworzyć.
+
+KROK 4: Instalacja brakujących bibliotek (opcjonalne)
+Większość bibliotek jest w Anacondzie, ale jeśli wystąpi błąd "ModuleNotFoundError: No module named 'wordcloud'", wykonaj następujące kroki:
+1. Otwórz "Anaconda Prompt" z menu Start.
+2. Wpisz komendę:
+   pip install wordcloud
+3. Zrestartuj Jupyter Notebook.
+
+KROK 5: Uruchomienie kodu
+W Jupyter Notebook proszę kliknąć menu "Cell" -> "Run All", aby wykonać cały kod od początku do końca
+ LUB uruchomić każdą komórkę osobno używając przycisków "Shift + Enter"
+ 
+ 
+DODATEK
+
+Jeśli nie można zainstalować Anacondy to dołączyłem również wygenerowane raporty w formacie HTML, które można otworzyć w przeglądarce bez konieczności instalowania oprogramowania.
